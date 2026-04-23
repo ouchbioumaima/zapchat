@@ -13,4 +13,4 @@ RUN mkdir -p zapchat_media
 EXPOSE 8080
 
 # Run the server
-CMD ["python3", "chat_server.py"]
+CMD ["python3", "chat_server.py", "--port", "7860"]
