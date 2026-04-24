@@ -13,5 +13,5 @@ jobs:
           lfs: true
       - name: Push to HF
         run: |
-          git remote add huggingface https://mimaouchbi:${{ secrets.HF_TOKEN }}@huggingface.co/spaces/mimaouchbi/whatsapp-chat
+          git remote add huggingface https://mimaouchbi:${{ secrets.HF_TOKEN }}@huggingface.co/spaces/mimaouchbi/zap-chat
           git push huggingface main --force
