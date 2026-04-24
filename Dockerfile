@@ -9,8 +9,9 @@ COPY index.html .
 # Create media directory
 RUN mkdir -p zapchat_media
 
-# Expose port (Railway overrides with $PORT)
-EXPOSE 8080
+# HF Spaces requires port 7860
+ENV PORT=7860
+EXPOSE 7860
 
 # Run the server
-CMD ["python3", "chat_server.py", "--port", "7860"]
+CMD ["python3", "chat_server.py"]
